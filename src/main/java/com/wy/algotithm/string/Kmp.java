@@ -1,4 +1,4 @@
-package com.wy.algotithm.kmp;
+package com.wy.algotithm.string;
 
 /**
  * ClassName Kmp
