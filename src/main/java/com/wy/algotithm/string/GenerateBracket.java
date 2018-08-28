@@ -88,6 +88,8 @@ public class GenerateBracket {
         backtrack2(list,"",0,0,n);
         return list;
     }
+
+
     private void backtrack2(List<String> list, String temp,int left,int right,int n){
         if(left>n || right > left || right > n){
             return;
