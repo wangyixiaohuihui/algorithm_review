@@ -13,9 +13,6 @@ package com.wy.algotithm.string;
  **/
 public class ArrayDelRepeat {
 
-
-
-
     public static  int removeDuplicates(int[] nums){
 
         if(nums.length ==0 ){
