@@ -44,6 +44,10 @@ public class TestThree {
 
 
     public static void main(String[] args) {
+
+
+        System.out.println(10 / 3 *3 ==10);
+
         List<List<Integer>> s = new TestThree().threeSum(new int[]{-1,0,1,2,-1,-4});
 
         for(List<Integer> s1: s){

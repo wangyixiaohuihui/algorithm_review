@@ -40,14 +40,36 @@ public class Test {
 
 
     public static void main(String[] args) {
-        int res = Test.subArraySum(new int[]{1, 2, 3}, 3);
+//        int res = Test.subArraySum(new int[]{1, 2, 3}, 3);
+//
+//        HashSet<Integer> diffSet = new HashSet<Integer>();
+//
+//        HashMap<Integer, Integer> sumMap = new HashMap<Integer, Integer>(16);
+//
+//        HashSet<Integer> visitSet = new HashSet<Integer>();
+//
+//        visitSet.addAll(diffSet);
+//
+//        int count =3;
+//        if(--count ==2){
+//            System.out.println("hhhhhh");
+//        }
+//        System.out.println(res);
 
-        HashSet<Integer> diffSet = new HashSet<Integer>();
-
-        HashMap<Integer, Integer> sumMap = new HashMap<Integer, Integer>(16);
 
 
 
-        System.out.println(res);
+
+        StringBuffer kBf = new StringBuffer();
+        for(int i=1; i<=4 ; i++){
+            kBf.append(i);
+        }
+
+        kBf.charAt(3);
+
+        kBf.deleteCharAt(3);
+
+        System.out.println(kBf.toString());
+
     }
 }

@@ -52,9 +52,31 @@ public class StringMul {
     }
 
 
+
+    public String reverseStr(String s, int k) {
+
+        for (int i = 0; i < s.length(); i += 2 * k) {
+
+            s = reverse(s, i, Math.min(i+k, s.length()-1));
+        }
+        return s;
+    }
+
+    public String reverse(String s, int left, int right) {
+
+        while (left < right) {
+            char t = s.charAt(left);
+
+        }
+        return s;
+    }
+
+
     public static void main(String[] args) {
         String res = StringMul.multiply("2","3");
         System.out.println(res);
+
+
 
     }
 }
