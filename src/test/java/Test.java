@@ -1,5 +1,7 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 
 /**
  * ClassName Test
@@ -39,6 +41,25 @@ public class Test {
     }
 
 
+    private static boolean isDividingNum(int num){
+
+        int s = num;
+        boolean isDividing =  true;
+        while( 0 != num){
+
+            int unit = num %10;
+            if(s % unit !=0){
+                isDividing = false;
+                break;
+            }
+            num = num/10;
+        }
+        return isDividing;
+    }
+
+
+
+
     public static void main(String[] args) {
 //        int res = Test.subArraySum(new int[]{1, 2, 3}, 3);
 //
@@ -58,18 +79,22 @@ public class Test {
 
 
 
+        System.out.println(isDividingNum(10));
 
+        char[] s = new char[1];
+        new String(s);
 
-        StringBuffer kBf = new StringBuffer();
-        for(int i=1; i<=4 ; i++){
-            kBf.append(i);
-        }
-
-        kBf.charAt(3);
-
-        kBf.deleteCharAt(3);
-
-        System.out.println(kBf.toString());
+//
+//        StringBuffer kBf = new StringBuffer();
+//        for(int i=1; i<=4 ; i++){
+//            kBf.append(i);
+//        }
+//
+//        kBf.charAt(3);
+//
+//        kBf.deleteCharAt(3);
+//
+//        System.out.println(kBf.toString());
 
     }
 }

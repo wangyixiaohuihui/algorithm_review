@@ -1,3 +1,8 @@
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * ClassName StringMul
  * Date 2018/8/31
@@ -73,10 +78,26 @@ public class StringMul {
 
 
     public static void main(String[] args) {
-        String res = StringMul.multiply("2","3");
-        System.out.println(res);
+//        String res = StringMul.multiply("2","3");
+//        System.out.println(res);
+//
+//        List<String> a = new ArrayList<String>();
+
+        System.out.println('A'+0);
+        System.out.println('a'+0);
+
+        int s = StringUtils.indexOf("aaa", "aa");
 
 
 
+        char[] sArray = "dss".toCharArray();
+
+        for(int i=0; i<sArray.length; i++){
+
+            if(sArray[i] >='A' && sArray[i]<= 'Z'){
+                sArray[i] = (char)(sArray[i] +32);
+            }
+        }
+        System.out.println(new String(sArray));
     }
 }
