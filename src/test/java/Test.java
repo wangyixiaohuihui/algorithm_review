@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 /**
  * ClassName Test
@@ -58,6 +55,27 @@ public class Test {
     }
 
 
+    public static boolean isPerfectSquare(int num) {
+        int start =0;
+        int end = num;
+
+        while(start <= end){
+
+            int mid = start +(end -start)/2;
+            if(mid * mid == num){
+                return true;
+            }else if(mid *mid < num){
+                start = mid + 1;
+            }else{
+                end = mid -1;
+            }
+
+        }
+
+
+        return false;
+    }
+
 
 
     public static void main(String[] args) {
@@ -78,11 +96,24 @@ public class Test {
 //        System.out.println(res);
 
 
+        // 无符号右移 /2
 
-        System.out.println(isDividingNum(10));
+//         for(char a='a'; a<='z'; a++){
+//             System.out.println((int)a);
+//         }
+//
+//         String a ="-27897i";
+//        Map<Integer, List<Integer>> graph = new HashMap<Integer, List<Integer>>();
+//
+//        Map<Integer, Integer> graph2 = new HashMap<Integer, Integer>();
+//
+//        System.out.println(a.substring(0, a.length()-1));
+//        Map<Character,Integer> dicMap = new HashMap<Character, Integer>();
 
-        char[] s = new char[1];
-        new String(s);
+//        System.out.println(isDividingNum(10));
+//
+//        char[] s = new char[1];
+//        new String(s);
 
 //
 //        StringBuffer kBf = new StringBuffer();
@@ -96,5 +127,7 @@ public class Test {
 //
 //        System.out.println(kBf.toString());
 
+
+        isPerfectSquare(2147483647);
     }
 }

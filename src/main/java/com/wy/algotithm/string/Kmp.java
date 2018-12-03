@@ -17,7 +17,7 @@ public class Kmp {
 
         int len = patternString.length();
 
-        int[] next = new int[patternString.length()];
+        int[] next = new int[len];
         next[0] = -1;
         int k= -1;
         int j=0;
@@ -25,8 +25,8 @@ public class Kmp {
         while( j <len -1){
 
             if( k == -1 || patternString.charAt(j) == patternString.charAt(k)){
-                ++k;
-                ++j;
+                k++;
+                j++;
 
                 if(patternString.charAt(j) != patternString.charAt(k)){
                     next[j] =k;
@@ -49,7 +49,7 @@ public class Kmp {
     /**
      * 计算next 函数
      * @param patternString 匹配串
-     * @return
+     * @return next数组
      */
     private static int[] calNext(String patternString){
 
