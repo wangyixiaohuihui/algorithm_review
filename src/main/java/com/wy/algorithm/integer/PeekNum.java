@@ -39,5 +39,13 @@ public class PeekNum {
     public static void main(String[] args) {
 
         findPeakElement(new int[]{1,2});
+
+
+        int[] a = new int[2];
+        for(int a1: a){
+
+        }
+
+
     }
 }
