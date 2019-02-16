@@ -128,6 +128,12 @@ public class Test {
 //        System.out.println(kBf.toString());
 
 
-        isPerfectSquare(2147483647);
+//        isPerfectSquare(2147483647);
+
+
+        System.out.println((6>>1)&1);
+        System.out.println((7>>1)&1);
     }
+
+
 }
