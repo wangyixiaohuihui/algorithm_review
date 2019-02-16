@@ -21,7 +21,7 @@ public class Kmp {
         next[0] = -1;
         int k= -1;
         int j=0;
-        while(j <len -1){
+        while(j < len -1){
 
             if( k == -1 || patternString.charAt(j) == patternString.charAt(k)){
                 ++k;

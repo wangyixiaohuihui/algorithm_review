@@ -1,5 +1,7 @@
-import java.util.HashMap;
-import java.util.HashSet;
+
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.*;
 
 /**
  * ClassName Test
@@ -39,6 +41,62 @@ public class Test {
     }
 
 
+    public static  String getHint(String secret, String guess) {
+
+        int bulls = 0;
+        int cows = 0;
+        int[] numbers = new int[10];
+        for (int i = 0; i<secret.length(); i++) {
+            int s = Character.getNumericValue(secret.charAt(i));
+            int g = Character.getNumericValue(guess.charAt(i));
+            if (s == g){
+                bulls++;
+            }else {
+                if (numbers[s] < 0){
+                    cows++;
+                }
+                if (numbers[g] > 0){
+                    cows++;
+                }
+                numbers[s] ++;
+                numbers[g] --;
+            }
+        }
+        return bulls + "A" + cows + "B";
+    }
+
+
+    public static List<String> subdomainVisits(String[] cpdomains) {
+
+        Map<String, Integer> countDomain = new HashMap<String, Integer>();
+
+
+        List<String> countDomainList = new ArrayList<String>();
+
+
+        for(String cpdomain: cpdomains){
+
+            String[] countAndDomain = cpdomain.split(StringUtils.SPACE);
+            int count = Integer.parseInt(countAndDomain[0]);
+
+            String[] domains = countAndDomain[1].split("\\.");
+            String tempDomain="";
+            for(int i=domains.length-1; i>0; i--){
+
+                tempDomain = tempDomain + domains[i];
+                countDomain.put(tempDomain, countDomain.getOrDefault(tempDomain,0)+ count);
+            }
+        }
+
+        for(Map.Entry<String, Integer> domianAndCount: countDomain.entrySet()){
+
+            countDomainList.add(domianAndCount.getValue()+StringUtils.SPACE +domianAndCount.getKey());
+
+        }
+
+        return countDomainList;
+    }
+
     public static void main(String[] args) {
 //        int res = Test.subArraySum(new int[]{1, 2, 3}, 3);
 //
@@ -58,18 +116,21 @@ public class Test {
 
 
 
+        //subdomainVisits(new String[]{"9001 discuss.leetcode.com"});
 
 
-        StringBuffer kBf = new StringBuffer();
-        for(int i=1; i<=4 ; i++){
-            kBf.append(i);
-        }
+        System.out.println(getHint("1807", "7810"));
 
-        kBf.charAt(3);
-
-        kBf.deleteCharAt(3);
-
-        System.out.println(kBf.toString());
+//        StringBuffer kBf = new StringBuffer();
+//        for(int i=1; i<=4 ; i++){
+//            kBf.append(i);
+//        }
+//
+//        kBf.charAt(3);
+//
+//        kBf.deleteCharAt(3);
+//
+//        System.out.println(kBf.toString());
 
     }
 }
