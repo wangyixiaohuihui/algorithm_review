@@ -1,3 +1,4 @@
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -78,7 +79,11 @@ public class Test {
 
 
 
+
     public static void main(String[] args) {
+
+
+
 //        int res = Test.subArraySum(new int[]{1, 2, 3}, 3);
 //
 //        HashSet<Integer> diffSet = new HashSet<Integer>();
@@ -130,9 +135,24 @@ public class Test {
 
 //        isPerfectSquare(2147483647);
 
+//        Calendar rightNow = Calendar.getInstance();
+//        SimpleDateFormat df = new SimpleDateFormat("yyyyMMdd");// 设置你想要的格式
+//        String dateStr = df.format(rightNow.getTime());
+//        String res = String.format("current '%s'", dateStr);
+//
+//        System.out.println(res);
 
-        System.out.println((6>>1)&1);
-        System.out.println((7>>1)&1);
+
+//        List<Integer> idx = new ArrayList<>();
+//        idx.add(1);
+//        idx.add(3);
+//        idx.add(5);
+//
+//        int j = Collections.binarySearch(idx, 0);
+//
+//        System.out.println(j);
+
+        System.out.println(0 ^ 100);
     }
 
 
