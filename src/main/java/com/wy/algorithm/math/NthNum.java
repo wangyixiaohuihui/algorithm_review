@@ -357,10 +357,21 @@ public class NthNum {
 //        a = a^b;
 //        System.out.println(a);
 //        System.out.println(b);
+        int[][] intervals = new int[][]{{5,1},{1,2},{4,3},{3,1}};
+        Arrays.sort(intervals, (a, b)->a[0]<=b[0]?-1:1);
 
+//        Arrays.sort(intervals, (a,b)->Integer.compare(a[0],b[0]));
 
+        for (int i=0; i<intervals.length; i++){
+//            for(int j=0; j<intervals[0].length; j++) {
 
+                System.out.println("===="+intervals[i][0]);
+//            }
+        }
 
+        int x=5;
+        x+=2;
+        System.out.println(x);
     }
 
 
