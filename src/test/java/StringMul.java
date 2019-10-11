@@ -1,7 +1,9 @@
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * ClassName StringMul
@@ -99,5 +101,14 @@ public class StringMul {
             }
         }
         System.out.println(new String(sArray));
+
+
+
+
+
+
+
+
+
     }
 }
