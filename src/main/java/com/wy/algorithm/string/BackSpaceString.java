@@ -1,4 +1,4 @@
-package com.wy.algotithm.string;
+package com.wy.algorithm.string;
 
 /**
  * ClassName BackSpaceString

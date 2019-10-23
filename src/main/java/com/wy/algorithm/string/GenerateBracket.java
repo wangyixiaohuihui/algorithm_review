@@ -1,4 +1,4 @@
-package com.wy.algotithm.string;
+package com.wy.algorithm.string;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.wy.algotithm.string;
+package com.wy.algorithm.string;
 
 import org.apache.commons.lang3.StringUtils;
 

@@ -21,11 +21,12 @@
     </build>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+
+        <!-- https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor -->
         <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>3.8</version>
+            <groupId>com.typesafe.akka</groupId>
+            <artifactId>akka-actor_2.11</artifactId>
+            <version>2.5.25</version>
         </dependency>
 
         <dependency>
@@ -33,7 +34,21 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.8.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.netflix.rxjava</groupId>
+            <artifactId>rxjava-scala</artifactId>
+            <version>0.20.7</version>
+        </dependency>
+
 
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>douyu-repo</id>
+            <name>douyu Repository</name>
+            <url>http://maven.ocean.douyu.com/nexus/content/groups/public</url>
+        </repository>
+    </repositories>
 
 </project>

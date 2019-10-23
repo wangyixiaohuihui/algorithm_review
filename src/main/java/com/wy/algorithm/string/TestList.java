@@ -1,8 +1,6 @@
-package com.wy.algotithm.string;
+package com.wy.algorithm.string;
 
-import com.sun.jmx.remote.internal.ArrayQueue;
 import javafx.util.Pair;
-import scala.actors.LinkedQueue;
 
 import java.util.*;
 

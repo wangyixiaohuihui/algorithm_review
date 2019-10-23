@@ -1,4 +1,4 @@
-package com.wy.alogorithm.dp;
+package com.wy.algorithm.dp;
 
 import java.util.Arrays;
 
