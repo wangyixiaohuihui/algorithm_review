@@ -8,7 +8,7 @@ package com.wy.algorithm.spi;
  **/
 public class Circle implements Shape {
     @Override
-    public void drea() {
+    public void draw() {
         System.out.println("draw a Circle");
     }
 }
