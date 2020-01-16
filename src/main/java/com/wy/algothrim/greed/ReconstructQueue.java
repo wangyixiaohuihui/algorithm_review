@@ -12,13 +12,8 @@ public class ReconstructQueue {
 
     public int[][] reconstructQueue(int[][] people) {
 
-
         Integer[] A = new Integer[10];
-
-
-
         Arrays.sort(A);
-
         Arrays.sort(people, (a, b) -> (b[0] == a[0] ? a[1] - b[1] : b[0] - a[0]));
         List<int[]> res = new ArrayList<>();
         for (int[] p : people) {
