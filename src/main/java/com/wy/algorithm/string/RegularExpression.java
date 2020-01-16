@@ -19,7 +19,6 @@ public class RegularExpression {
             return false;
         }
         boolean[][] dp = new boolean[s.length() + 1][p.length() + 1];
-
         dp[0][0] = true;
 
         for (int i = 0; i < p.length(); i++) {
