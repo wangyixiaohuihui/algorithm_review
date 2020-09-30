@@ -23,7 +23,6 @@ public class QuickSort2 {
     private static int quick(int[] nums, int start, int end){
 
         int guard = nums[start];
-
         while(start < end){
 
             if(start < end && nums[end]>= guard){

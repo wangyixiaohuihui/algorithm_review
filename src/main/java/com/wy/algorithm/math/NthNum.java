@@ -1,11 +1,7 @@
 package com.wy.algorithm.math;
 
-import scala.util.parsing.json.JSONObject;
 
-import javax.swing.tree.TreeNode;
 import java.util.*;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
 import java.util.regex.Pattern;
 
 /**
