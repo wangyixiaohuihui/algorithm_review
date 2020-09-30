@@ -1,0 +1,3 @@
+dubbo=com.wy.algorithm.spi.DubboMyAdaptive
+cloud=com.wy.algorithm.spi.SpringMyAdaptive
+thrift=com.wy.algorithm.spi.ThriftMyAdaptive

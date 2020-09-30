@@ -1,4 +1,4 @@
-package com.wy.algotithm.string;
+package com.wy.algorithm.string;
 
 /**
  * ClassName StringMInDistance
@@ -6,7 +6,7 @@ package com.wy.algotithm.string;
  *
  * @author wangyi
  **/
-public class StringMInDistance {
+public class StringMinDistance {
 
     public static  int minDistance(String word1, String word2) {
 
@@ -85,7 +85,12 @@ public class StringMInDistance {
     }
 
 
-
+    /**
+     * dp 方式
+     * @param word1 字符串1
+     * @param word2 字符串2
+     * @return 最小距离
+     */
     public static int minDistanceNew(String word1, String word2) {
         //边界条件
         if(word1.length() == 0){
@@ -149,7 +154,7 @@ public class StringMInDistance {
 
     public static void main(String[] args) {
 
-        int s = StringMInDistance.minDistance("pneumonoultramicroscopicsilicovolcanoconiosis", "ultramicroscopically");
+        int s = StringMinDistance.minDistance("pneumonoultramicroscopicsilicovolcanoconiosis", "ultramicroscopically");
 
         System.out.println(s);
     }
