@@ -9,6 +9,6 @@ package com.wy.jvm.design.observer;
 public class ConcreteObserver implements Observer {
     @Override
     public void update() {
-        System.out.println("update Observer");
+        System.out.println("update Observer 11111");
     }
 }
